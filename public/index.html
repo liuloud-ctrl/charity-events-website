@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Community Foundation | Charity Events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation (shared across all pages) -->
+    <nav class="navbar">
+        <a href="index.html" class="brand">Sunshine Community Foundation</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="search.html">Search Events</a>
+        </div>
+    </nav>
+
+    <main class="wrap">
+
+        <!-- Hero: static organisation information (hard-coded) -->
+        <section class="hero">
+            <h1>Bringing Our Community Together</h1>
+            <p>
+                The Sunshine Community Foundation is a not-for-profit organisation
+                dedicated to food relief, shelter and education for families in need
+                across our city. Every event we run raises funds that go directly
+                back into the community.
+            </p>
+            <p><strong>Contact:</strong> hello@sunshinefoundation.org.au &nbsp;|&nbsp; (02) 5550 1001</p>
+        </section>
+
+        <h2 class="section-title">Current &amp; Upcoming Events</h2>
+        <p class="empty" id="event-list" hidden></p>
+
+        <!-- Events are injected here dynamically from GET /api/events -->
+        <div class="grid" id="event-grid"></div>
+
+        <div class="contact-box">
+            <h3>About Us</h3>
+            <p>
+                We believe that small acts of generosity can create lasting change.
+                Join us at one of our upcoming events, or reach out to volunteer,
+                donate or sponsor. Together we can make our city a better place.
+            </p>
+        </div>
+
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
